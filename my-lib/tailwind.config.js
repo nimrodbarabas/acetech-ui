@@ -51,6 +51,9 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
     },
+    experimental: {
+      classRegex: ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    },
   },
   plugins: [],
 };
