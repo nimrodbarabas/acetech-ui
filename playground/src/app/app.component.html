@@ -1,18 +1,26 @@
-<div class="h-screen w-full bg-green-400 flex items-center justify-center flex-col">
-<p>Test</p>
-  <div class="w-40 bg-red-500 p-2 ml-2">
-  </div>
-
-  <div class="bg-primary text-primary-foreground text-sm p-2">
-    Texting variables and tailwind config
-  </div>
-
-  <div class="mt-20">
-    This is my lib
-    <div class="w-96 bg-white rounded-md h-40">
-      <lib-my-lib/>
+<div class="h-screen w-full  flex items-center justify-center flex-col">
+  <div class="container mx-auto">
+    <div>
+      <h2 class="text-xl font-medium mb-2">Button variants:</h2>
+      <div class="flex space-x-2">
+        <button type="button" actButton >Button</button>
+        <button type="button" actButton variant="destructive" >Button</button>
+        <button type="button" actButton variant="secondary">Secondary</button>
+        <button type="button" actButton  variant="outline">Outline</button>
+        <button type="button" actButton  variant="ghost">Ghost</button>
+        <button type="button" actButton variant="link">Link</button>
+      </div>
+    </div>
+    <div class="mt-5">
+      <h2 class="text-xl font-medium mb-2">Button sizes:</h2>
+      <div class="flex space-x-2 items-end">
+        <button type="button" actButton  size="lg">Large</button>
+        <button type="button" actButton  size="default">Default</button>
+        <button type="button" actButton  size="sm">Small</button>
+        <button type="button" actButton size="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gift"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></svg>
+        </button>
+      </div>
     </div>
   </div>
-
-  <button type="button" actButton size="lg" variant="destructive">Button</button>
 </div>
